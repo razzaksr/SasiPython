@@ -30,7 +30,7 @@ print("Each month: ",profit/12)'''
 num1=int(input("Tell us number one: "))# 30
 num2=int(input("Tell us number two: "))# 89
 print("Number 1",num1,"number 2",num2)
-num1=num1*num2
+num1*=num2#num1=num1*num2
 num2=num1/num2
-num1=num1/num2
+num1/=num2#num1=num1/num2
 print("Number 1",num1,"number 2",num2)
