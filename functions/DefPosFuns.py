@@ -1,4 +1,4 @@
-# default and + arguments
+# default and Positional arguments
 
 teck=[12,23,56,99,12,90,11,56,78,67,56,23]
 
