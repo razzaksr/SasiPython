@@ -42,7 +42,7 @@ class Card(Account):
 a1.accountNo=98765678;a1.accountHolder="Sasi";a1.accountBal=23400.9
 print(a1)'''
 
-c1=Card(12347383478347,9876787,"Sasi",879.6)
+'''c1=Card(12347383478347,9876787,"Sasi",879.6)
 c1+4000
 #print(c1)
 c1-1800
@@ -55,4 +55,4 @@ c1+10000
 c1-100
 c1+4000
 print(c1)
-c1.countTrans()
+c1.countTrans()'''
