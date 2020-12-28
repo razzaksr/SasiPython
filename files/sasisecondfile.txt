@@ -1,0 +1,1 @@
+['hai', 'hello', 9.8, 7.9, 12, 9, 67]This sample to check append operation

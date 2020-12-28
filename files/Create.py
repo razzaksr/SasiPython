@@ -1,0 +1,6 @@
+file=open("sasifirstfile.txt","w")
+print(file.mode)
+print(file.closed)
+print(file.name)
+file.close()
+print(file.closed)
