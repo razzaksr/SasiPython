@@ -15,7 +15,7 @@ file=open("D:\\jpgms\\secret.doc","wb")
 
 
 store=[a,b,c,d]
-dump(store,file)
+dump(store,file)# Pickling
 
 file.close()
 

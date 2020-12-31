@@ -61,7 +61,7 @@ class ServiceAdmin:
             print(serror,other)
             other=int(input("Please enter valid job number: "))
             return self|other
-
+'''
 s=ServiceAdmin()
 job1=Jobcard(9987656,Date(2020,12,18),"Razak Mohamed",8667002959,['Engines sieze','General service','break'],0,0,"TN54L4192")
 job2=Jobcard(567876567,Date(2020,7,25),"Sabarinathan",8765567765,['General service'],0,0,"TN54M0635")
@@ -80,3 +80,4 @@ s-job1
 print(s)
 print(s|1111111)
 #print(Date(year=2020,month=9,day=10))
+'''
