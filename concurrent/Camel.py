@@ -10,7 +10,7 @@ class Counter(Thread):
     def __add__(self, other):
         if other<=self.tickets:
             owe=other*120
-            fare=int(input("Pay your amunt to get the tickets: "))
+            fare=int(input("Pay your amount to get the tickets: "))
             if fare>=owe:
                 self.tickets-=other
                 print(other,"tickets has booked for",self.name)

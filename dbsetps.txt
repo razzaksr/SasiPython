@@ -1,0 +1,90 @@
+Back End/ Data Access technology:
+File
+Database server: Relational Data base Management System
+MS SQL
+Oracle
+Derby
+MySQL:
+user name:
+root
+password:
+
+
+Command Line Interface:
+GUI:
+XAMPP/WAMPP: 
+apache>> show db server in browser: 80
+mysql>>> actual database server: 3306
+
+Browser>> localhost>> PHP MyAdmin>> database server
+
+Structured Query Language(SQL):
+
+Create database: collection of tables
+CREATE DATABASE `sasi` ;
+
+Create Table: collection of different types of columns/fields
+CREATE TABLE `sasi`.`alpha` (
+`billno` INT( 4 ) NOT NULL ,
+`billdate` DATE NOT NULL ,
+`billname` VARCHAR( 40 ) NOT NULL ,
+`billamount` DOUBLE NOT NULL
+) ENGINE = MYISAM ;
+
+Create Primary Key:
+ALTER TABLE `alpha` ADD PRIMARY KEY ( `billno` )
+
+Change table fields:
+ALTER TABLE `alpha` ADD `biller` VARCHAR( 40 ) NOT NULL;
+
+Auto increment:
+ALTER TABLE `alpha` CHANGE `billno` `billno` INT( 4 ) NOT NULL AUTO_INCREMENT;
+
+Insert Records/Rows:
+INSERT INTO `sasi`.`alpha` (
+`billno` ,
+`billdate` ,
+`billname` ,
+`billamount` ,
+`biller`
+)
+VALUES (
+NULL , '2021-01-05', 'Sasikumar', '890', 'vinoth'
+), (
+NULL , '2021-01-04', 'mohamed', '900', 'vikas'
+);
+
+
+Update Records:
+UPDATE `sasi`.`alpha` SET `billamount` = '920' WHERE `alpha`.`billno` =1;
+
+Fetch Records: SELECT COLUMNS FROM TABLENAME WHERE CONDITION
+a. fetch one row's particular columns(one or more):
+SELECT `billamount` , `billdate` FROM `alpha` WHERE `billno` =1;
+b. fetch one row's all columns:
+SELECT * FROM `alpha` WHERE `billno` =2;
+c. fetch all row's particular columns(one or more):
+SELECT `billno` , `biller` FROM `alpha;
+d. fetch all row's all columns
+SELECT * FROM `alpha`;
+
+Delete records:DELETE FROM TABLE WHERE CONDITION
+a. delete particular row:DELETE FROM `sasi`.`alpha` WHERE `billno`=1;
+b. delete all row:
+TRUNCATE TABLE `alpha`;
+
+Drop:
+a. table:DROP TABLE `alpha`;
+b. data base:DROP DATABASE `sasi`;
+
+
+Connect with python:
+install and import MySQLDb/ pymysql library/module
+
+steps:
+Connection:obj=connect(location,database,user,pass)
+Query writting:qry='sql'
+Cursor creation:cursor c=obj.cursor()
+Query execution:c.execute()>> 1. insert,update,alter(int)
+			   	2. fetch>> fetchAll,fetchOne
+commit
